@@ -16,9 +16,9 @@
 		
 		.centered {
 			position : absolute;
-			top : 50%;
+			top : 5%;
 			left : 50%;
-			margin-top: -50px;
+			margin-top: -10px;
 			margin-left: -250px;
 		}
 		
@@ -42,6 +42,36 @@
 		#box p:hover {
 			font-style : italic;
 		}
+		
+		#projects {
+			padding-left : 0px;
+			width : 500px;
+			margin-top : 15px;
+			font-size : 18px;
+			text-align : left;
+		}
+		
+		li {
+			margin : 20px 0;
+			float: center;
+		}
+		
+		li a {
+			text-align : center;
+			padding : 10px 10px;
+			text-decoration : none;
+		}
+		
+		li a:hover {
+			font-style : italic;
+		}
+		
+		ul {
+			list-style-type : none;
+			margin : 0;
+			padding : 0px;
+			overflow : hidden;
+		}
 	
 	</style>
 <head>
@@ -51,9 +81,33 @@
 	<div id="box">
 	
 		<p>
-			<a href="index.html">not done sry</a>
+			<a href="index.html">projects</a>
 		</p>
 		
 	</div> <! end of box >
+	
+	<div id="projects">
+		<ul>
+			<li>
+				<font color="#B249DB">LZW compression (March 2018):</font>
+				<font color="#000000">Successfully created a C program that compresses text and binary files using an LZW compression algorithm, storing codes in a custom trie structure. Manipulated bits to write 9-15 bit packets to maximize efficiency
+				<i>(code is private on github)</i></font>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<font color="F09B14">Virtual World (December 2017):</font>
+				<font color="#000000">Improved a Java program that created a Virtual World by refactoring and organizing files of methods into a more object-oriented focus. I then implemented an A-Star pathing algorithm and added user interaction with the environment</font>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<font color="#09D4D3">C Shell (March 2018):</font>
+				<font color="#000000">Recreated a functional Bash shell using C. This program simulated a command line, parsing through arguments and running pipeline processes
+				<i>(code is private on github)</i></font>
+			</li>
+		</ul>
+	</div>
 </div>
+
 </body>
